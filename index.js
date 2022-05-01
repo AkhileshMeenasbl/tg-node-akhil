@@ -8,7 +8,12 @@ const TelegramBot = require('node-telegram-bot-api');
 const token = process.env.BOT_TOKEN;
 
 // starts a new Telegram bot instance that "polls" for updates
-const bot = new TelegramBot(token, { polling: true });
+//const bot = new TelegramBot(token, { polling: true });
+
+var express = require('express');
+var app = express();
+app.set('port', (process.env.PORT || 5000));
+ 
 
 // index.js
 
